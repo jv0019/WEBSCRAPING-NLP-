@@ -3,9 +3,9 @@ import os
 from datetime import datetime, timezone
 from textblob import TextBlob
 
-client_id = os.getenv('REDDIT_CLIENT_ID', 'btlGjPITmqRh2qb3NBZAyw')
-client_secret = os.getenv('REDDIT_CLIENT_SECRET', 'L5WHSMHcTg84l1B1B-WND4hdmYLnGw')
-user_agent = os.getenv('REDDIT_USER_AGENT', 'PyR/v1.0 (by /u/exoghost0019) - Python PRAW script for fetching posts')
+client_id = os.getenv('REDDIT_CLIENT_ID')
+client_secret = os.getenv('REDDIT_CLIENT_SECRET')
+user_agent = os.getenv('REDDIT_USER_AGENT')
 
 # PRAW
 reddit = praw.Reddit(
